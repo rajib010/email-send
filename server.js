@@ -1,9 +1,9 @@
-import { config as configDotenv } from "dotenv";
+import { config } from "dotenv";
 import cors from "cors";
 import express from "express";
 import nodemailer from "nodemailer";
 
-configDotenv();
+config();
 
 const app = express();
 app.use(express.json());
